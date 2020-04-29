@@ -9,20 +9,8 @@ class Article
     private $prix;
     private $quantite;
 
-    public function __construct(array $tuple = null)
+    public function __construct()
     {
-        if (count($tuple))
-            $this->hydrate($tuple);
-    }
-
-    public function hydrate(array $tuple)
-    {
-        foreach ($tuple as $key => $value) {
-            $method = 'set' . ucfirst($key);
-            if (method_exists($this, $method)) {
-                $this->$method($value);
-            }
-        }
     }
 
     /**
@@ -88,7 +76,4 @@ class Article
     {
         $this->quantite = $quantite;
     }
-
-
-    
 }
