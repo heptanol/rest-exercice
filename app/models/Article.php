@@ -14,7 +14,7 @@ class Article
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getId()
     {
@@ -22,7 +22,7 @@ class Article
     }
 
     /**
-     * @param mixed $id
+     * @param int $id
      */
     public function setId($id)
     {
@@ -30,7 +30,7 @@ class Article
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getLibelle()
     {
@@ -38,7 +38,7 @@ class Article
     }
 
     /**
-     * @param mixed $libelle
+     * @param string $libelle
      */
     public function setLibelle($libelle)
     {
@@ -46,7 +46,7 @@ class Article
     }
 
     /**
-     * @return mixed
+     * @return float
      */
     public function getPrix()
     {
@@ -54,7 +54,7 @@ class Article
     }
 
     /**
-     * @param mixed $prix
+     * @param float $prix
      */
     public function setPrix($prix)
     {
@@ -62,7 +62,7 @@ class Article
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getQuantite()
     {
@@ -70,7 +70,7 @@ class Article
     }
 
     /**
-     * @param mixed $quantite
+     * @param int $quantite
      */
     public function setQuantite($quantite)
     {
